@@ -4,23 +4,19 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background:rgb(0, 0, 0);
-    border-radius: 20px;
+    /* background: #1A242F; */
+
     color: aliceblue;
+    font-family: 'Crimson Pro', serif;
+    font-family: 'Poppins', sans-serif;
 
 }
 
 body {
-    width: 100%;
-    height: 100vh;
-    background:rgb(43, 43, 43);
-    font-family: 'Crimson Pro', serif;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: #1A242F;
 }
-header {
+
+/* .movies-body{
     width: 80%;
     height: 90%;
     border: 2px solid blanchedalmond;
@@ -28,42 +24,86 @@ header {
     margin-top: 5%;
     overflow: hidden;
     box-shadow: 0px 10px 25px -10px rgb(57, 192, 216);
-    background: url("photo/v-for.jpg") no-repeat center center;
+   background: url("photo/v-for.jpg") no-repeat center center/cover;
+} */
+.movies-body {
+    width: 80%;
+    border: 2px solid blanchedalmond;
+    border-radius: 20px;
+    margin: 100px 10% 0 10%;
+    overflow: hidden;
+    box-shadow: 0px 10px 25px -10px rgb(57, 192, 216);
 }
-.navbar-top{
+.fragman-area video{
+    position:absolute;
+    height: 100%;
+    width: 150%;
+    left:-25%;
+    z-index: -1;
+}
+
+.fragman-area {
+    height: 890px;
+    position: relative;
+    margin: 0%;
+    padding: 0%;
+    /* background: url("photo/v-for.jpg")no-repeat center center/cover; */
+}
+.content{ position: relative;
+color: white;
+margin-top: 60px;
+padding-left: 60px;
+}
+.navbar{
+    margin-left: 20px ;
+    margin-right: 20px;
+}
+.left-bar {
     display: flex;
     justify-content: space-between;
-    text-align: center;
     align-items: center;
+    
 }
-.top-bar{
+
+.left-bar ul { 
     display: flex;
-    margin-left: 15px;
-    align-items: center;
-}
-.top-bar ul {
-    display: flex;
+    margin: auto;
+    align-items:flex-end;
     text-decoration: none;
     list-style: none;
-    
-    margin: auto;
-    padding-right: 15px;
-    
-}
-.top-bar ul li,a{
-    display: flex;
-    text-decoration: none;
     justify-content: space-around;
-    padding-right: 15px;
-    color: aliceblue;
 }
-.user-panel{ 
-    margin-right:30px;
-   position: relative;
-   float: right;
+.left-bar ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 10px;
 
 }
-#user-detail{
+.featured-area{
+    margin-bottom: 63px;
+    display: flex;
+    align-items: flex-end;
+}
+ .popular-slide{
+    height: 600px;
+    display: flex;
+    justify-content:flex-end;
+    align-items:end;
+    flex-direction: row;
+} 
+.featured-content{
+
+    padding-left: 12px;
+}
+.featured-content img{
+    height: 200px;
+    width: 130px;
     
 }
-    
+.watched-list,.movies-list,.series-list,.action-list,.scifiction-list{
+    display: flex;
+}
+.mov-category{
+    margin-left:30px;
+    margin: 10px;
+}
